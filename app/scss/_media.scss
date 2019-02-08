@@ -10,6 +10,8 @@
 
     &__block {
       margin-top: 0;
+      padding: 20px 25px 20px 210px;
+      background-color: #fff;
     }
 
     &__girl {
@@ -22,7 +24,9 @@
       border: 10px solid rgba(252, 222, 222, 0.55);
 
       img {
-        width: 100%;
+        display: block;
+        margin: 0 auto;
+        width: auto;
         height: 100%;
         object-fit: contain;
         object-position: center;
@@ -45,6 +49,7 @@
   }
 
   .hero-carousel {
+    width: 100%;
     max-width: 60%;
   }
 
@@ -116,6 +121,14 @@
 	.section-insta {
     background-size: cover;
   }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack
+     .section-insta__outer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+     }
+  }
 }
 
 // ≥992px
@@ -172,6 +185,8 @@
     margin-top: 20px;
     order: 0;
     &__block {
+      padding: 0;
+      background-color: transparent;
       border-left: 0;
       order: 1;
       width: 100%;
@@ -245,6 +260,9 @@
       width: 100%;  
     }
   }
+
+
+
 }
 
 // ≥768px

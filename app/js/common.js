@@ -1,5 +1,7 @@
 jQuery(function() {
 
+	svg4everybody();
+
 	function slick_counter(that, thatSlide, thatSlick) {
 		var	i = (thatSlide ? thatSlide : 0) + 1;
 				container = $(that).parent().find('.ui-counter');

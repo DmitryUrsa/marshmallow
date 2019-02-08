@@ -529,6 +529,7 @@ $burger-line-h: 3px;
 		&-smallmd {
 			min-width: 150px;
 			min-height: 50px;
+			height: 50px;
 			padding-top: 15px;
 			padding-bottom: 15px;
 			padding-left: 25px;
@@ -538,6 +539,7 @@ $burger-line-h: 3px;
 		&-medium {
 			min-height: 50px;
 			min-width: 180px;
+			height: 50px;
 			padding-top: 15px;
 			padding-bottom: 15px;
 			padding-right: 50px;
@@ -546,6 +548,7 @@ $burger-line-h: 3px;
 
 		&-small {
 			min-width: 125px;
+			min-height: 35px;
 			height: 35px;
 			padding-left: 8px;
 			padding-right: 8px;
@@ -724,6 +727,7 @@ $burger-line-h: 3px;
 	left: 200px;
 	max-width: 1170px;
 	font-family: $secondary-font;	
+	width: 100%;
 
 	.slick-slide {
 		width: 260px;
@@ -816,6 +820,7 @@ $burger-line-h: 3px;
 		justify-content: flex-start;
 		align-items: center;
 		margin-right: 45px;
+		min-width: 245px; //IE11 - need exact measurement
 
 		&-title {
 			margin-right: 35px;
@@ -865,7 +870,7 @@ $burger-line-h: 3px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 65px;
+	width: 55px;
 	height: 30px;
 	cursor: pointer;
 	padding: 0;
@@ -926,6 +931,7 @@ $burger-line-h: 3px;
 
 	&--left {
 		transform: rotate(180deg);
+		margin-right: 20px;
 	}
 }
 
@@ -976,6 +982,7 @@ $burger-line-h: 3px;
 
 	&__inner {
 		max-width: 230px;
+		width: 100%;
 		padding-top: 45px;
 		margin-right: auto;
 		margin-left: auto;
@@ -987,6 +994,7 @@ $burger-line-h: 3px;
 	}
 
 	&__name {
+		width: 100%;
 		font-size: 50px;
 		font-weight: 400;
 		line-height: 55px;
@@ -1026,6 +1034,7 @@ $burger-line-h: 3px;
 	}
 
 	&__text {
+		width: 100%;
 		letter-spacing: 0.9px;
 		margin: 0;
 		margin-bottom: 30px;
@@ -1206,6 +1215,7 @@ $burger-line-h: 3px;
 	}
 
 	&__name {
+		width: 100%;
 		font-size: 21px;
 		font-weight: 700;
 		line-height: 30px;
@@ -1261,6 +1271,7 @@ $burger-line-h: 3px;
 	&__box {
 		position: relative;
 		top: -10px;
+		width: 100%;
 	}
 	
 	&:hover {
@@ -1270,6 +1281,8 @@ $burger-line-h: 3px;
 		border-color: $bright-pink;
 	}
 }
+
+
 
 .section-hader {
 	.shiny-title {
@@ -1366,6 +1379,10 @@ $burger-line-h: 3px;
 		}
 	}
 
+	&__description {
+		width: 100%;
+	}
+
 	&__name {
 		font-size: 22px;
 		color: rgba(62, 49, 48, 255);
@@ -1373,10 +1390,8 @@ $burger-line-h: 3px;
 		margin-bottom: 25px;
 	}
 
-	&__text {
-		
-	}
 }
+
 
 .read-more {
 	font-weight: bold;
@@ -1579,7 +1594,7 @@ $burger-line-h: 3px;
 		max-height: 50px;	
 	}
 	&--search {
-		padding: 20px 30px 20px 20px;
+		padding: 10px 30px 10px 20px;
 		max-height: 50px;
 	}
 	&--default {
@@ -1694,7 +1709,7 @@ $burger-line-h: 3px;
 	flex-direction: column;
 
 	&__header {
-		flex: 100%;
+		width: 100%;
 		font-size: 30px;
 		margin-bottom: 30px;
 		font-family: $default-font;
@@ -1891,6 +1906,18 @@ $burger-line-h: 3px;
 			left: 535px;
 		}
 	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack
+   .single-review__image img {
+   	height: auto;
+   }
+   .section-insta__image {
+   	width: auto;
+   }
+   .section-insta__image img {
+	   	width: auto;
+   }
 }
 
 @import "media"; // Always at the end

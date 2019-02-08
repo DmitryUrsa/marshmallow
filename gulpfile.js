@@ -40,7 +40,8 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick/slick.min.js',
-		'app/libs/parallax-master/src/parallax.js',
+		'app/libs/parallax-master/src/parallax.min.js',
+		'app/libs/svg4everybody/dist/svg4everybody.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
