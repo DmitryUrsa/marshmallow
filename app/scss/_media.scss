@@ -82,6 +82,9 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .page-leafs {
+    display: none;
+  }
   .contact-block {
     &__data {
       font-size: 22px;
