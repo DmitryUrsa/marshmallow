@@ -102,11 +102,22 @@ jQuery(function() {
 		jQuery('.app-body').addClass('no-scroll');
 	});
 
+	num = $('.main-header-wrap').height();
 
-	
-
-	
-
-	
+	$(window).bind('scroll', function () {
+		if ($(window).scrollTop() > num) {
+			$('.app').css('border-top', num + 'px solid #fbe6e7');
+			$('.main-header-wrap').addClass('main-header-wrap--fixed');
+			$('.main-header').addClass('main-header--fixed');
+			$('.main-header').addClass('container');
+		} else if ($(window).scrollTop() < num)  {
+			num = $('.main-header-wrap').height();
+			$('.app').css('border-top', '0px');
+			$('.main-header-wrap').removeClass('main-header-wrap--fixed');
+			$('.main-header').removeClass('main-header--fixed');
+			$('.main-header').removeClass('container');
+		}
+	});
+	$(window).trigger('scroll')
 
 });

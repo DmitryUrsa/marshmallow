@@ -82,6 +82,14 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .main-header {
+    &--fixed {
+      .main-nav {
+        margin-left: auto;
+        margin-right: auto; 
+      }
+    }
+  }
   .page-leafs {
     display: none;
   }
@@ -136,6 +144,14 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .main-header {
+    &--fixed {
+      height: auto;
+      padding-bottom: 20px;
+      .main-nav {
+      }
+    }
+  }
   .section-contacts {
     min-height: auto; 
   }
@@ -317,8 +333,26 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .main-header {
+    padding-left: 0;
+    padding-right: 0;
+    &--fixed {
+      .megamenu-button {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
   .mega-menu {
     text-align: center;
+    &__top {
+      flex-direction: column-reverse;
+      .close-button {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+      }
+    }
     &__info {
       margin-right: 0;
     }

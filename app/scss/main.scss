@@ -71,10 +71,54 @@ a {
 	}
 }
 
+.main-header-wrap {
+	&--fixed {
+		margin-top: -1px;
+		box-shadow: 0px 6px 24px 0px rgba(14, 20, 47, 0.05);
+		background-color: rgb(253, 233, 234);
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 500;
+	}
+}
+
 .main-header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+
+	&--fixed {
+		height: 70px;
+		
+		.logo {
+			height: 75px;
+			width: 205px;
+			padding: 10px 0 10px 0;
+		}
+		.main-nav {
+			margin-left: 370px;
+			font-size: 12px;
+			ul>li:not(:last-child) {
+				margin-right: 40px;
+			}
+		}
+		.megamenu-button {
+			margin-left: 133px;
+		}
+		.header-cart {
+			width: 70px;
+			height: 70px;
+			&::before {
+				border-right: 3px solid #f05f5f;
+			}
+			&:hover::before {
+				width: calc(100% + 20px);
+			}
+		}
+	}
 }
 
 .logo {
@@ -162,12 +206,14 @@ $burger-line-h: 3px;
 	height: 22px;
 	cursor: pointer;
 	margin-left: 68px;
+	transition: transform 1s cubic-bezier(1, 0, 0, 1);
 
 	&__line {
 		display: inline-block;
 		width: 100%;
 		background-color: $brown;
 		height: $burger-line-h;
+		transition: background-color .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 	}
 
 	&::before, &::after {
@@ -176,10 +222,16 @@ $burger-line-h: 3px;
 		width: 15px;
 		height: $burger-line-h;
 		background-color: $brown;
+		transition: background-color .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 	}
 
 	&:hover {
-		transform: scale(0.90);
+		transform: rotate(180deg);
+		.megamenu-button__line,
+		&::before,
+		&::after {
+			background-color: $bright-pink;
+		}
 	}
 }
 
@@ -249,7 +301,6 @@ $burger-line-h: 3px;
 	background-color: $pink;
 	background: $pink url('../img/home/hero-main/hero-bg.jpg') center center no-repeat;
 	background-size: cover;
-	min-height: 1000px;
 	position: relative;
 
 	&__inner {
@@ -1924,7 +1975,7 @@ $burger-line-h: 3px;
 }
 
 .mega-menu-wrap {
-	//display: none;
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
