@@ -1339,7 +1339,7 @@ $burger-line-h: 3px;
 	display: flex!important;
 
 	&:before {
-		width: calc(100% + 6px;);
+		width: calc(100% + 6px);
 		height: 60px;
 		content: '';
 		position: absolute;
@@ -1924,13 +1924,16 @@ $burger-line-h: 3px;
 }
 
 .mega-menu-wrap {
+	//display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 900;
 	height: 100vh;
-	overflow: scroll;
+	overflow: auto;
+	background: $pink url(../img/menu-bg.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 .mega-menu {
@@ -1940,9 +1943,7 @@ $burger-line-h: 3px;
 	width: 100%;
 	height: 100%;
 	z-index: 900;
-	background: $pink url(../img/menu-bg.jpg) center center no-repeat;
-	background-size: cover;
-	min-height: 100vh;
+	
 
 	.container {
 		width: 100%;
@@ -1952,7 +1953,16 @@ $burger-line-h: 3px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 40px;
+		margin-bottom: 65px;
+		padding-top: 40px;
+		
+		.logo {
+			padding: 0;
+		}
+
+		.close-button {
+			margin-right: 100px;
+		}
 	}
 
 	&__main {
@@ -1962,7 +1972,7 @@ $burger-line-h: 3px;
 	&__header {
 		font-size: 55px;
 		line-height: 1.1;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 		display: block;
 	}
 
@@ -2030,6 +2040,10 @@ $burger-line-h: 3px;
 		width: 18px;
 		height: 18px;
 	}
+}
+
+.no-scroll {
+	overflow: hidden;
 }
 
 @import "media"; // Always at the end

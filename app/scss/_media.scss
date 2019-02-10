@@ -263,6 +263,14 @@
       width: 100%;  
     }
   }
+  .mega-menu {
+    &__search {
+      margin-bottom: 20px;
+    }
+    &__col-menu--line {
+      margin-top: 40px;
+    }
+  }
 
 
 
@@ -309,6 +317,28 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .mega-menu {
+    text-align: center;
+    &__info {
+      margin-right: 0;
+    }
+    &__item {
+      font-size: 20px;
+      &--big {
+        font-size: 30px;
+      }
+    }
+    &__header {
+      font-size: 36px;
+    }
+    &__col-menu {
+      justify-content: center;
+      align-items: center;
+      &--padding {
+        padding-left: 15px;
+      }
+    }
+  }
   .footer-links {
     text-align: center;
     &__col {

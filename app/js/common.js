@@ -92,6 +92,16 @@ jQuery(function() {
 	  originY: 0
 	});
 
+	jQuery('#mega-menu-close').click(function() {
+		jQuery('.mega-menu-wrap').fadeOut();
+		jQuery('.app-body').removeClass('no-scroll');
+	});
+
+	jQuery('#open-megamenu').click(function() {
+		jQuery('.mega-menu-wrap').fadeIn();
+		jQuery('.app-body').addClass('no-scroll');
+	});
+
 
 	
 
