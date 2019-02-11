@@ -145,12 +145,38 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .catalog-item {
+    &__main {
+      height: 430px;
+    }
+    &__one-click {
+      display: none;
+    }
+    &__control {
+      display: none;
+    }
+  }
+  .page-info {
+    padding-top: 30px;
+    text-align: center;
+    &__button {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::before {
+        display: none;
+      }
+    }
+    &__title {
+      font-size: 48px;
+    }
+  }
   .main-header {
-    &--fixed {
+    &--fixed, 
+    &--default {
       height: auto;
       padding-bottom: 20px;
-      .main-nav {
-      }
     }
   }
   .section-contacts {
@@ -334,6 +360,9 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .page-info__title {
+    font-size: 36px;
+  }
   .main-header {
     padding-left: 0;
     padding-right: 0;

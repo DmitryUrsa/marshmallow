@@ -1,7 +1,9 @@
 @import "_mixins/font-face";
 
 @include font-face("TT Norms", "../fonts/TTNorms/TTNorms-Regular");
+@include font-face("TT Norms", "../fonts/TTNorms/TTNorms-Medium", 500);
 @include font-face("TT Norms", "../fonts/TTNorms/TTNorms-Bold", bold);
+@include font-face("TT Norms", "../fonts/TTNorms/TTNorms-ExtraBold", 800);
 @include font-face("CenturyGothic", "../fonts/CenturyGothic/CenturyGothic");
 @include font-face("CenturyGothic", "../fonts/CenturyGothic/CenturyGothic-Bold", bold);
 @include font-face("CenturyGothic", "../fonts/CenturyGothic/CenturyGothic-BoldItalic", bold, italic);
