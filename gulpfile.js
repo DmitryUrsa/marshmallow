@@ -34,6 +34,7 @@ gulp.task('styles', function() {
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
+	
 });
 
 gulp.task('scripts', function() {
@@ -42,6 +43,7 @@ gulp.task('scripts', function() {
 		'app/libs/slick/slick.min.js',
 		'app/libs/parallax-master/src/parallax.min.js',
 		'app/libs/svg4everybody/dist/svg4everybody.min.js',
+		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

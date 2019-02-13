@@ -3,6 +3,17 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1920px) {
+  .catalog-carousel {
+    max-width: 1200px;
+
+    .slick-list {
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1810px) {
   .main-promo {
     align-items: center;
@@ -36,6 +47,15 @@
 }
 
 @media screen and (max-width: 1500px) {
+  .arrow--default {
+    top: -40px;
+    &-right {
+      right: 50px;
+    }
+    &-left {
+      left: 50px;
+    }
+  }
   .home-hero {
     &__inner {
       flex-wrap: wrap;
@@ -82,6 +102,24 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .form-doubled {
+    flex-direction: column;
+  }
+  .contact-form--size-medium {
+    max-width: 100%;
+  }
+  .catalog-carousel {
+    max-width: 992px;
+    .catalog-item {
+      max-width: 280px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block !important;
+      &__main {
+        height: 350px;
+      }
+    }
+  }
   .main-header {
     &--fixed,
     &--default {
@@ -133,6 +171,12 @@
 	.section-insta {
     background-size: cover;
   }
+  .catalog-item {
+    max-width: 290px;
+    &__main {
+      height: 380px;
+    }
+  }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack
      .section-insta__outer {
@@ -145,6 +189,27 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .catalog-item {
+    max-width: 325px;
+  }
+  
+  .catalog-banner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    &__button {
+      justify-content: center;
+    }
+    &__text {
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  }
+  .catalog-carousel {
+    max-width: 768px;
+  }
   .catalog-item {
     &__main {
       height: 430px;
@@ -288,6 +353,13 @@
       padding: 40px;
     }
   }
+  .form {
+    &__field {
+      &--half {
+        max-width: 100%;
+      }
+    }
+  }
   .footer-links {
     &__row {
       flex-wrap: wrap;
@@ -321,6 +393,9 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .catalog-item {
+    max-width: 505px;
+  }
   .footer-contacts {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -360,6 +435,7 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  
   .page-info__title {
     font-size: 36px;
   }

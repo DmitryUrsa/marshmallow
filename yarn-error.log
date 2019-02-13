@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Dmitry\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @fancyapps/fancybox
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Users\Dmitry\AppData\Local\Microsoft\WindowsApps;C:\Users\Dmitry\AppData\Roaming\npm;C:\Users\Dmitry\AppData\Local\Programs\Microsoft VS Code\bin;C:\TCPU70
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Work\Clean\Marshmallows Shop\node_modules\node-sass\vendor\win32-x64-64\binding.node'
+
+npm manifest: 
+  {
+    "name": "optimizedhtml",
+    "version": "4.0.0",
+    "description": "OptimizedHTML 4 - Start HTML Template",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "WebDesign Master",
+    "license": "ISC",
+    "devDependencies": {
+      "browser-sync": "^2.26.3",
+      "gulp": "^4.0.0",
+      "gulp-autoprefixer": "^6.0.0",
+      "gulp-svg-symbols": "^3.2.3",
+      "gulp-clean-css": "^4.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-notify": "^3.2.0",
+      "gulp-rename": "^1.4.0",
+      "gulp-rsync": "0.0.8",
+      "gulp-sass": "^4.0.2",
+      "gulp-uglify": "^3.0.1",
+      "gulp-util": "^3.0.8"
+    },
+    "dependencies": {
+      "flickity": "^2.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
