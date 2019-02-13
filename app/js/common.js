@@ -148,12 +148,14 @@ jQuery(function() {
 	});
 
 	var scene = $('.page-leafs').get(0);
-	var parallaxInstance = new Parallax(scene, {
-	  selector: '.page-leafs__leaf',
-	  relativeInput: true,
-	  calibrateY: true,
-	  originY: 0
-	});
+	if (scene) {
+		var parallaxInstance = new Parallax(scene, {
+			selector: '.page-leafs__leaf',
+			relativeInput: true,
+			calibrateY: true,
+			originY: 0
+		});
+	}
 
 	jQuery('#mega-menu-close').click(function() {
 		jQuery('.mega-menu-wrap').fadeOut();

@@ -2579,6 +2579,12 @@ $burger-line-h: 3px;
 			overflow: hidden;
 			border-radius: 100%;
 			border: 20px solid white;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
 		}
 	}
 }
