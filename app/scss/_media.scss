@@ -102,6 +102,46 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .tabs {
+    > li {
+      margin-bottom: 20px;
+    }
+  }
+  .table--responsive-xl {
+    margin-bottom: 0;
+    background-color: transparent;
+    > thead,
+    > tfoot {
+      display: none;
+    }
+
+    > tbody {
+      display: block;
+
+      > tr {
+        display: block;
+        border: 1px solid #333;
+        border-radius: 2px;
+        margin-bottom: 20px;
+
+        > td {
+          background-color: #fff;
+          display: block;
+          vertical-align: middle;
+          text-align: right;
+          padding: 30px 25px!important;
+        }
+        > td[data-title]:before {
+          content: attr(data-title);
+          float: left;
+          font-size: inherit;
+          font-weight: 700;
+          color: $brown;
+        }
+      }
+    }
+  }
+
   .form-doubled {
     flex-direction: column;
   }
@@ -189,6 +229,39 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .table--responsive-lg {
+    margin-bottom: 0;
+    background-color: transparent;
+    > thead,
+    > tfoot {
+      display: none;
+    }
+
+    > tbody {
+      display: block;
+
+      > tr {
+        display: block;
+        border: 1px solid #333;
+        border-radius: 2px;
+        margin-bottom: 20px;
+
+        > td {
+          background-color: #fff;
+          display: block;
+          vertical-align: middle;
+          text-align: right;
+        }
+        > td[data-title]:before {
+          content: attr(data-title);
+          float: left;
+          font-size: inherit;
+          font-weight: 700;
+          color: $brown;
+        }
+      }
+    }
+  }
   .catalog-item {
     max-width: 325px;
   }
@@ -393,6 +466,39 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .table--responsive-md {
+    margin-bottom: 0;
+    background-color: transparent;
+    > thead,
+    > tfoot {
+      display: none;
+    }
+
+    > tbody {
+      display: block;
+
+      > tr {
+        display: block;
+        border: 1px solid #333;
+        border-radius: 2px;
+        margin-bottom: 20px;
+
+        > td {
+          background-color: #fff;
+          display: block;
+          vertical-align: middle;
+          text-align: right;
+        }
+        > td[data-title]:before {
+          content: attr(data-title);
+          float: left;
+          font-size: inherit;
+          font-weight: 700;
+          color: $brown;
+        }
+      }
+    }
+  }
   .catalog-item {
     max-width: 505px;
   }
@@ -435,6 +541,59 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .tabs {
+    > li {
+      width: 100%;
+      text-align: left;
+      &:not(:last-child) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  .table--responsive-xl>tbody>tr>td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px !important;
+    &:before {
+      margin-bottom: 10px;
+    }
+  }
+  .table--responsive-sm {
+    margin-bottom: 0;
+    background-color: transparent;
+    > thead,
+    > tfoot {
+      display: none;
+    }
+
+    > tbody {
+      display: block;
+
+      > tr {
+        display: block;
+        border: 1px solid #333;
+        border-radius: 2px;
+        margin-bottom: 20px;
+
+        > td {
+          background-color: #fff;
+          display: block;
+          vertical-align: middle;
+          text-align: right;
+        }
+        > td[data-title]:before {
+          content: attr(data-title);
+          float: left;
+          font-size: inherit;
+          font-weight: 700;
+          color: $brown;
+        }
+      }
+    }
+  }
   
   .page-info__title {
     font-size: 36px;
@@ -513,6 +672,8 @@
     }
   }
   .form {
+    $self: &;
+
     &__disclamer {
       margin-left: 0;
       margin-top: 20px;
@@ -525,6 +686,18 @@
         justify-content: center;
         align-items: center;
       }
+    }
+
+    &--popup {
+      max-width: 710px;
+      width: 100%;
+  
+      #{ $self }__header {
+        font-size: 24px;
+        max-width: 100%;
+        margin-bottom: 34px;
+      }
+      
     }
   }
 

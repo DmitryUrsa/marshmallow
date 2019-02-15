@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<div class="offset-xl-1 col-xl-3 col-lg-4 d-flex order-lg-1 order-0 page-info__button">
-						<a href="#" class="button button--theme-default button--size-smallmd">Пошив модели по фото</a>
+						<a data-fancybox-trigger="order-popup" data-src="#order-popup" href="javascript:;" class="button button--theme-default button--size-smallmd fancybox-inline">Пошив модели по фото</a>
 					</div>
 				</div>
 			</div>
@@ -771,7 +771,7 @@
 								<div class="form__row">
 									<div class="form__field">
 										<label for="#form-1-text" class="form__field-label">Ваше сообщение
-											<a href="#" class="form__field-label-link">Размерная сетка</a>
+											<a data-fancybox-trigger="size-chart" data-src="#size-chart-popup" href="javascript:;" class="form__field-label-link fancybox-size-chart">Размерная сетка</a>
 										</label>
 										<textarea id="form-1-text" type="text" class="ui-input ui-input--textarea ui-input--normal ui-input--default" placeholder=""></textarea>
 									</div>
@@ -955,6 +955,359 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="size-chart-popup" class="size-chart" style="display:none">
+		<div class="container">
+			<div class="size-chart__inner">
+				<div class="headline headline--medium">Размерная сетка</div>
+
+				<section class="tabs-block size-chart__table">
+					<ul class="tabs">
+						<li class="active highlight"><div class="highlight__box">Пижамы</div></li>
+						<li class="highlight"><div class="highlight__box">Сорочки</div></li>
+						<li class="highlight">
+							<div class="highlight__box">Халаты</div>
+						</li>
+						<li class="highlight">
+							<div class="highlight__box">Комплекты</div>
+						</li>
+						<li class="highlight">
+							<div class="highlight__box">Топы</div>
+						</li>
+						<li class="highlight">
+							<div class="highlight__box">Платья</div>
+						</li>
+						<li class="highlight">
+							<div class="highlight__box">Нижнее белье</div>
+						</li>
+					</ul>
+				
+					<ul class="tab__content">
+						<li class="active">
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<table id="table" class="table table--center table--responsive-xl table--theme-default">
+								<thead>
+									<tr>
+										<th>Международный</th>
+										<th>Российский</th>
+										<th>Обхват груди, см</th>
+										<th>Обхват талии, см</th>
+										<th>Обхват бедер, см</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+									<tr>
+										<td data-title="Международный"><div class="table__content">XXS</div></td>
+										<td data-title="Российский"><div class="table__content">40</div></td>
+										<td data-title="Обхват груди, см"><div class="table__content">78-82</div></td>
+										<td data-title="Обхват талии, см"><div class="table__content">60-64</div></td>
+										<td data-title="Обхват бедер, см"><div class="table__content">86-90</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</section>
+
+				<article class="size-chart__description">
+					<div class="headline headline--medium">Как определить свой размер?</div>
+					<p>Чтобы правильно выбрать размер одежды, определите собственные параметры с помощью сантиметровой ленты. Она должна
+						плотно прилегать к телу, не провисая и не затягиваясь у основания. <br />Если ваш показатель — это среднее между двумя
+						величинами, выбирайте большую.</p>
+					<p class="shiny-title shiny-title--medium">Обхват груди </p>
+					<p>Обхват груди измеряется по наиболее выступающим точкам груди. Лента должна проходитьна уровне подмышек</p>
+					<p class="shiny-title shiny-title--medium">Обхват под грудью</p>
+					<p>Объем под грудью измеряется в самой широкой части грудной клетки, не натягивая слишком сильноизмерительную ленту.</p>
+					<p class="shiny-title shiny-title--medium"></p>Обхват талии</p>
+					<p>Обхват талии измеряется вокруг талии. Снимая мерку, не напрягайте живот держите измерительнуюленту свободно.</p>
+					<p class="shiny-title shiny-title--medium"></p>Обхват бедер</p>
+					<p>Объем бедер измеряют по выступающим частям бедер и ягодиц на 15-20 см ниже уровня талии.</p>
+						
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<div id="order-popup" class="custom-popup order-popup" style="display:none">
+		<form action="#3" class="form form--popup">
+			<fieldset class="form__fieldset">
+				<legend class="form__header">Заказать	индивидуальный пошив</legend>
+				<div class="form__row form__row--double">
+					<div class="form__field form__field--half">
+						<label for="#form-1-name" class="form__field-label">Введите ваше имя</label>
+						<input id="form-1-name" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="">
+					</div>
+					<div class="form__field form__field--half">
+						<label for="#form-1-phone" class="form__field-label form__field-label--bold">Введите номер телефона</label>
+						<input id="form-1-phone" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="+7 (9__) ___-__-__">
+					</div>
+				</div>
+				<div class="form__row">
+						<div class="form__field">
+							<label for="#form-1-phone" class="form__field-label">загрузите фотографию желаемой модели</label>
+							<div class="ui-upload">
+								<div class="ui-upload__label">
+									<svg class="svg-icon svg-icon--plus">
+										<use xlink:href="img/icons/svg-symbols.svg#plus"></use>
+									</svg>
+									<span class="ui-upload__label-text">Не более 3 Мб (jpg, png,)</span></div>
+								<input class="ui-upload__input" type="file" class="upload" />
+							</div>
+						</div>
+				</div>
+				<div class="form__row">
+					<div class="form__field">
+						<label for="#form-1-text" class="form__field-label">Ваше сообщение
+							<a data-fancybox-trigger="size-chart" data-src="#size-chart-popup" href="javascript:;" class="form__field-label-link fancybox-size-chart">Размерная сетка</a>
+						</label>
+						<textarea id="form-1-text" type="text" class="ui-input ui-input--textarea ui-input--normal ui-input--default" placeholder=""></textarea>
+					</div>
+				</div>
+				<div class="form__row form__row--disclamer">
+					<button class="button button--size-smallmd button--theme-default"  tabindex="0">Заказать</button>
+					<div class="form__disclamer">Нажимая кнопку, высоглашаетесь<br/>с условиями обработки данных</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div id="thanks-popup" class="custom-popup custom-popup--bg thanks-popup" style="display:none">
+		<div class="headline headline--medium">Спасибо за ваш заказ!</div>
+		<p>Письмо с подтверждением заказа отправлено на указанный 
+			вами e-mail.</p>
+			<p>Мы свяжемся с вами в ближайшее время для уточнения 
+			деталей заказа</p>
+		<a href="#" class="button button--size-medium button--theme-default" style="margin-top:35px;">продолжить покупки</a>
 	</div>
 
 	<script src="js/scripts.min.js"></script>

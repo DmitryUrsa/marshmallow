@@ -1,7 +1,7 @@
 jQuery(function() {
 
 	svg4everybody();
-
+		
 	function slick_counter(that, thatSlide, thatSlick) {
 		var	i = (thatSlide ? thatSlide : 0) + 1;
 				container = $(that).parent().find('.ui-counter');
@@ -215,6 +215,105 @@ jQuery(function() {
 	$(".ui-upload__input").change(function() {
     var filename = readURL(this);
     $(this).parent().find('.ui-upload__label-text').text(filename);
-  });
+	});
+	
+	// Tabs system
+
+	$(".tabs-block").each(function() {
+		
+		var clickedTab = $(this).find(".tabs > .active");
+		var tabWrapper = $(this).find(".tab__content");
+		var activeTab = tabWrapper.find(".active");
+		var activeTabHeight = activeTab.outerHeight();
+		
+		// Show tab on page load
+		activeTab.show();
+		
+		// Set height of wrapper on page load
+		tabWrapper.height(activeTabHeight);
+		
+		$(this).find(".tabs > li").on("click", function() {
+			
+			// Remove class from active tab
+			$(this).parent().find("li").removeClass("active");
+			
+			// Add class active to clicked tab
+			$(this).addClass("active");
+			
+			// Update clickedTab variable
+			clickedTab = $(this).parent().find(".active");
+			
+			// fade out active tab
+			activeTab.fadeOut(250, function() {
+
+				var tabContentLi = $(this).parent().parent().find('.tab__content > li');
+				
+				// Remove active class all tabs
+				tabContentLi.removeClass("active");
+				
+				// Get index of clicked tab
+				var clickedTabIndex = clickedTab.index();
+
+				// Add class active to corresponding tab
+				var tabContentReady = tabContentLi.eq(clickedTabIndex);
+				
+				// To prevent crash when there is no content, but tab exist				
+				if( tabContentReady.length === 0 ) {
+					console.log('%cError! Tab with index #' + clickedTabIndex + ' not found!', 'font-weight: bold;color: #f05f5f;');
+				} else {
+					tabContentReady.addClass("active");
+				
+					// update new active tab
+					activeTab = $(this).parent().parent().find('.tab__content > .active');
+					
+					// Update variable
+					activeTabHeight = activeTab.outerHeight();
+					
+					// Animate height of wrapper to new tab height
+					tabWrapper.stop().delay(50).animate({
+						height: activeTabHeight
+					}, 500, function() {
+						
+					// Fade in active tab
+					activeTab.delay(50).fadeIn(250);
+						
+					});
+				}
+			});
+		});
+	});
+	// END Tabs system
+
+	// Fancybox settings
+	$('.fancybox-inline').fancybox({
+		defaultType: "inline",
+		touch: false,
+		hash: null,
+		clickOutside: "close",
+		smallBtn : true,
+	});
+	
+	$('[data-fancybox-trigger="size-chart"]').fancybox({
+		defaultType: "inline",
+		touch: false,
+		hash: null,
+		clickOutside: "close",
+		smallBtn : true,
+		afterShow: function() {
+			var tabWrapper = $('#size-chart-popup').find(".tab__content");
+			var activeTab = tabWrapper.find(".active");
+			var activeTabHeight = activeTab.outerHeight();
+			
+			// Set height of wrapper on page load
+			tabWrapper.stop().delay(50).animate({
+				height: activeTabHeight
+			}, 500, function() {
+				
+			// Fade in active tab
+			activeTab.delay(50).fadeIn(250);
+				
+			});
+		}
+	});
 
 });
