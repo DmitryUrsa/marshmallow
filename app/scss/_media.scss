@@ -550,6 +550,20 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .product-image {
+    height: 450px;
+  }
+  .catalog-thumbs {
+    margin-right: 0;
+    margin-top: 15px;
+    max-width: 100%;
+    
+    &__main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
   .tabs {
     > li {
       width: 100%;
