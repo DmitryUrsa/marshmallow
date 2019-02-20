@@ -110,6 +110,23 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+
+  .order-total {
+    margin-left: 0;
+    padding: 40px;
+    width: 100%;
+    order: -1;
+    &__row {
+      &--padding {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .form-doubled--big .order-form {
+    max-width: 100%;
+    padding: 40px;
+  }
   
   .tabs {
     > li {
@@ -225,6 +242,47 @@
     &__main {
       height: 380px;
     }
+  }
+
+  .cart-table {
+
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .table__content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+          }
+
+          &:before {
+            margin-bottom: 10px;
+            float: none;
+            width: 100%;
+            text-align: center;
+          }
+          &:first-child {
+            width: 100%;
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  .cart-table__info {
+    justify-content: center;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack

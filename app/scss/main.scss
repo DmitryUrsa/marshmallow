@@ -1672,6 +1672,13 @@ $burger-line-h: 3px;
 	.contact-form {
 		flex-shrink: 0;
 	}
+
+	&--big {
+		.order-form {
+			max-width: 555px;
+			width: 100%;	
+		}
+	}
 }
 
 .contact-form {
@@ -1780,6 +1787,10 @@ $burger-line-h: 3px;
 				font-weight: bold;
 			}
 
+			&--red {
+				color: $bright-pink;
+			}
+
 			&-link {
 				margin-left: auto;
 				font-weight: bold;
@@ -1827,18 +1838,6 @@ $burger-line-h: 3px;
 	}
 }
 
-.custom-popup {
-	max-width: 710px;
-	width: 100%;
-	padding: 60px 65px;
-	font-size: 16px;
-
-	&--bg {
-		background: #fff url(../img/popup-bg.png) center no-repeat;
-		background-size: cover;
-	}
-}
-
 .ui-input {
 	&--normal {
 		padding: 15px 20px;
@@ -1868,6 +1867,10 @@ $burger-line-h: 3px;
 	&--select {
 		padding: 20px;
 		line-height: 1;
+	}
+
+	&--bold-bottom {
+		border-bottom-width: 3px;
 	}
 }
 
@@ -2602,6 +2605,10 @@ $burger-line-h: 3px;
 	&--margin {
 		margin-bottom: 25px;
 	}
+
+	&--vertical {
+		flex-direction: column;
+	}
 }
 
 .catalog-carousel {
@@ -2932,6 +2939,12 @@ $burger-line-h: 3px;
   .no-border {
     border: 0;
 	}
+
+	&__content {
+		&--big {
+			font-size: 20px;
+		}
+	}
 	
 	&--center {
 		> thead,
@@ -2970,12 +2983,111 @@ $burger-line-h: 3px;
 		}
 
 	}
+	
+	&--theme-black {
+		font-size: 14px;
+		> thead > tr > th {
+			border-bottom: 3px solid $brown;
+			font-size: 16px;		
+		}
+		> thead,
+		> tbody,
+		> tfoot {
+			> tr {
+				border-bottom: 1px solid #000;
+				&:last-child {
+					border-bottom: 3px solid #000;
+				}
+				> th,
+				> td {
+					&:first-child {
+						padding-left: 0px;
+					}
+					&:last-child {
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.cart-outer {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.cart-table {
+
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				vertical-align: middle;
+				text-align: center;
+				&:first-child {
+					width: 450px;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+
+		&-image {
+			max-width: 100px;
+			height: 120px;
+			overflow: hidden;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 20px;
+			flex-shrink: 0;
+
+			img {
+				height: 100%;
+				width: auto;
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	&__remove {
+		
+		.svg-icon {
+			width: 16px;
+			height: 20px;
+			cursor: pointer;
+		}
+	}
+
+	.product-prices {
+		margin-bottom: 0;
+		&__previous {
+			margin-right: 0;
+		}
+	}
 }
 
 .catalog-thumbs {
+	$self: &;
+	
 	max-width: 100px;
 	width: 100%;
 	margin-right: 15px;
+
 	&__item {
 		width: 100px;
 		height: 137px;
@@ -3012,6 +3124,15 @@ $burger-line-h: 3px;
 
 		.ui-arrow:first-child {
 			margin-right: 10px;
+		}
+	}
+
+	&--small {
+		max-width: 80px;
+
+		#{ $self }__item {
+			width: 80px;
+			height: 120px;
 		}
 	}
 }
@@ -3364,6 +3485,121 @@ $burger-line-h: 3px;
 .catalog-card {
 	padding-top: 50px;
 	padding-bottom: 115px;
+}
+.fancybox-content {
+	padding: 0;
+}
+
+.catalog-card-preview {
+	padding: 50px 100px 50px 10px;
+}
+
+.custom-popup {
+	max-width: 710px;
+	width: 100%;
+	padding: 60px 65px;
+	font-size: 16px;
+
+	&--bg {
+		background: #fff url(../img/popup-bg.png) center no-repeat;
+		background-size: cover;
+	}
+}
+
+.order-total {
+	margin-left: 70px;
+	padding: 40px 60px;
+	height: 100%;
+
+	a {
+		color: #f05f5f;
+		font-size: 14px;
+	}
+
+	&__header {
+		font-size: 36px;
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+		&--padding {
+			padding-left: 20px;
+			margin-bottom: 5px;
+		}
+
+		&--line {
+			padding-bottom: 18px;
+			border-bottom: 1px solid #000;
+			margin-bottom: 18px;
+		}
+
+		&--total {
+			margin-bottom: 20px;
+		}		
+
+		&-item {
+			max-width: 50%;
+			white-space: nowrap;
+			
+			label {
+				margin: 0;
+				vertical-align: middle;
+			}
+
+			&--bold {
+				font-weight: bold;
+			}
+
+			&--red {
+				color: $bright-pink;
+			}
+		}
+	}
+
+	&__line {
+		margin-bottom: 15px;
+	}
+}
+
+.ui-radio {
+	$self: &;
+	vertical-align: middle;
+	margin: 0;
+	display: inline-block;
+
+	&__dot {
+		width: 15px;
+		height: 15px;
+		border: 1px solid #3e3130;
+		background-color: #ffffff;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			bottom: 3px;
+			left: 3px;
+			right: 3px;
+			background-color: #000;
+			opacity: 0;
+			transition: opacity 300ms ease;
+		}
+	}
+	input {
+		appearance: none;
+		border: none;
+		display: none;
+		&:checked ~ #{ $self }__dot {
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack

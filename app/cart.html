@@ -61,690 +61,206 @@
 		<section class="page-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 order-lg-0 order-1">
-						<h1 class="page-info__title">Каталог моделей</h1>
+					<div class="col-lg-12">
+						<h1 class="page-info__title">Корзина покупок</h1>
 						
 						<div class="breadcrumbs">
 							<a href="#" class="breadcrumbs__item">Главная</a> / 
-							<a href="#" class="breadcrumbs__item breadcrumbs__item--active">Каталог</a> 
+							<a href="#" class="breadcrumbs__item breadcrumbs__item--active">Корзина</a> 
 						</div>
-					</div>
-					<div class="offset-xl-1 col-xl-3 col-lg-4 d-flex order-lg-1 order-0 page-info__button">
-						<a data-fancybox-trigger="order-popup" data-src="#order-popup" href="javascript:;" class="button button--theme-default button--size-smallmd fancybox-inline">Пошив модели по фото</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="center-links">
+		<section class="cart-outer">
 			<div class="container">
-				<div class="line-block">
-					<div class="line-block__content center-links__content">
-						<a href="#" class="highlight center-links__item">
-							<span class="highlight__box">Новости</span>
-						</a>
-						<a href="#" class="highlight center-links__item">
-							<span class="highlight__box">Акции</span>
-						</a>
-						<a href="#" class="highlight center-links__item">
-							<span class="highlight__box">Хиты продаж</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+				<table id="table" class="table table--responsive-xl table--theme-black cart-table">
+					<thead>
+						<tr>
+							<th>модель</th>
+							<th>цена</th>
+							<th>количество</th>
+							<th>итого</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-title="модель">
+								<div class="table__content">
+									<div class="cart-table__info">
+										<div class="cart-table__info-image">
+											<img src="img/item.png" alt="">
+										</div>
 
-		<section class="catalog-carousel">
-			<div class="catalog-carousel__counter container d-flex justify-content-end">
-					<div class="ui-counter upper-text">
-						<span class="ui-counter-item" id="hero-carousel-counter-current">01</span>
-						<span class="ui-counter-item ui-counter-item--grey">/<span id="hero-carousel-counter-max">05</span></span>
-					</div>
-			</div>
-			<div class="catalog-carousel__arrows container"></div>
-			
-			<div class="catalog-carousel__inner">
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__main">
-						<div class="label-corner"><span>NEW</span></div>
-						<a href="#image" class="catalog-item__main-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</a>
-						<div class="catalog-item__control">
-							<a href="#" class="ui-control-circle ui-control-circle--cart">
-								<svg class="svg-icon svg-icon--shopping-store-cart">
-									<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-								</svg>
-							</a>
-							<a href="#" class="ui-control-circle ui-control-circle--search">
-								<svg class="svg-icon svg-icon--search">
-									<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-								</svg>
-							</a>
-						</div>
-						<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-					</div>
-					<div class="catalog-item__description">
-						<a href="#" class="catalog-item__description-name">Пижама женская</a>
-						<div class="product-prices">
-							<div class="product-prices__previous">
-								4 000 ₽
-							</div>
-							<div class="product-prices__current product-prices__current--pink">
-								2 000 ₽
-							</div>
-							<div class="product-prices__discount">50%</div>
-						</div>
-					</div>
-				</div>
+										<div class="cart-table__description">
+											<div class="cart-table__title">Пижама из атласа с кружевом	в две строки</div>
+											<div class="cart-table__charas">
+												<div class="cart-table__charas-row">Размер: <b>По меркам</b></div>
+												<div class="cart-table__charas-row">Детали: <b>Бордовый, Кружево</b></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="цена">
+								<div class="table__content">
+									<div class="product-prices product-prices--vertical product-prices--margin">
+										<div class="product-prices__previous">
+											4 000 ₽
+										</div>
+										<div class="product-prices__current product-prices__current--pink">
+											2 000 ₽
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="количество">
+								<div class="table__content">
+									<div class="quantity-slider">
+										<div class="quantity-slider__button quantity-slider__button--minus">-</div>
+	
+										<input type="number" min="0" class="quantity-slider__input" value="1">
+	
+										<div class="quantity-slider__button quantity-slider__button--plus">+</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="итого">
+								<div class="table__content table__content--big">
+									<b>2 000 Р</b>
+								</div>
+							</td>
+							<td data-title="Удалить">
+								<div class="table__content cart-table__remove">
+									<svg class="svg-icon svg-icon--rubbish-bin">
+											<use xlink:href="img/icons/svg-symbols.svg#rubbish-bin"></use>
+									</svg>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-title="модель">
+								<div class="table__content">
+									<div class="cart-table__info">
+										<div class="cart-table__info-image">
+											<img src="img/item.png" alt="">
+										</div>
+
+										<div class="cart-table__description">
+											<div class="cart-table__title">Пижама из атласа с кружевом	в две строки</div>
+											<div class="cart-table__charas">
+												<div class="cart-table__charas-row">Размер: <b>По меркам</b></div>
+												<div class="cart-table__charas-row">Детали: <b>Бордовый, Кружево</b></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="цена">
+								<div class="table__content">
+									<div class="product-prices product-prices--vertical product-prices--margin">
+										<div class="product-prices__previous">
+											4 000 ₽
+										</div>
+										<div class="product-prices__current product-prices__current--pink">
+											2 000 ₽
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="количество">
+								<div class="table__content">
+									<div class="quantity-slider">
+										<div class="quantity-slider__button quantity-slider__button--minus">-</div>
+	
+										<input type="number" min="0" class="quantity-slider__input" value="1">
+	
+										<div class="quantity-slider__button quantity-slider__button--plus">+</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="итого">
+								<div class="table__content table__content--big">
+									<b>2 000 Р</b>
+								</div>
+							</td>
+							<td data-title="Удалить">
+								<div class="table__content cart-table__remove">
+									<svg class="svg-icon svg-icon--rubbish-bin">
+											<use xlink:href="img/icons/svg-symbols.svg#rubbish-bin"></use>
+									</svg>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-title="модель">
+								<div class="table__content">
+									<div class="cart-table__info">
+										<div class="cart-table__info-image">
+											<img src="img/item.png" alt="">
+										</div>
+
+										<div class="cart-table__description">
+											<div class="cart-table__title">Пижама из атласа с кружевом	в две строки</div>
+											<div class="cart-table__charas">
+												<div class="cart-table__charas-row">Размер: <b>По меркам</b></div>
+												<div class="cart-table__charas-row">Детали: <b>Бордовый, Кружево</b></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="цена">
+								<div class="table__content">
+									<div class="product-prices product-prices--vertical product-prices--margin">
+										<div class="product-prices__previous">
+											4 000 ₽
+										</div>
+										<div class="product-prices__current product-prices__current--pink">
+											2 000 ₽
+										</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="количество">
+								<div class="table__content">
+									<div class="quantity-slider">
+										<div class="quantity-slider__button quantity-slider__button--minus">-</div>
+	
+										<input type="number" min="0" class="quantity-slider__input" value="1">
+	
+										<div class="quantity-slider__button quantity-slider__button--plus">+</div>
+									</div>
+								</div>
+							</td>
+							<td data-title="итого">
+								<div class="table__content table__content--big">
+									<b>2 000 Р</b>
+								</div>
+							</td>
+							<td data-title="Удалить">
+								<div class="table__content cart-table__remove">
+									<svg class="svg-icon svg-icon--rubbish-bin">
+											<use xlink:href="img/icons/svg-symbols.svg#rubbish-bin"></use>
+									</svg>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
-
-		<section class="section-assortiment">
-			<div class="container">
-				<div class="text-center headline headline--medium">Весь ассортимент</div>
-
-				<div class="assortiment-carousel">
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-					<a href="#" class="assortiment-carousel__item">
-						<div class="assortiment-carousel__item-image">
-							<img src="img/LvhESZpKf68.png" alt="">
-						</div>
-						<div class="assortiment-carousel__name">Пижамы</div>
-					</a>
-				</div>
-				
-			</div>
-		</section>
-
+		
 		<section class="section-padding">
 			<div class="container">
-				<div class="catalog-filters">
-					// Фильры нужно настраивать на самом движке
-				</div>
-				<div class="catalog-main">
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="catalog-banner">
-						<div class="catalog-banner__text">
-							<div class="catalog-banner__header">Не нашли нужную вещь?</div>
-							<div class="catalog-banner__desc">Напишите нам — обсудим индивидуально</div>
-						</div>
-						<div class="catalog-banner__button">
-							<a href="#" class="button button--theme-default button--size-medium">Написать</a>
-						</div>
-					</div>
-
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					<div class="catalog-item">
-						<div class="catalog-item__main">
-							<div class="label-corner"><span>NEW</span></div>
-							<a href="#image" class="catalog-item__main-image">
-								<img src="img/LvhESZpKf68.png" alt="">
-							</a>
-							<div class="catalog-item__control">
-								<a href="#" class="ui-control-circle ui-control-circle--cart">
-									<svg class="svg-icon svg-icon--shopping-store-cart">
-										<use xlink:href="img/icons/svg-symbols.svg#shopping-store-cart"></use>
-									</svg>
-								</a>
-								<a href="#" class="ui-control-circle ui-control-circle--search">
-									<svg class="svg-icon svg-icon--search">
-										<use xlink:href="img/icons/svg-symbols.svg#search"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="#" class="catalog-item__one-click">Заказать в один клик</a>
-						</div>
-						<div class="catalog-item__description">
-							<a href="#" class="catalog-item__description-name">Пижама женская</a>
-							<div class="product-prices">
-								<div class="product-prices__previous">
-									4 000 ₽
-								</div>
-								<div class="product-prices__current product-prices__current--pink">
-									2 000 ₽
-								</div>
-								<div class="product-prices__discount">50%</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-
-				<div class="line-block">
-					<div class="line-block__content">
-						<div class="pagination">
-							<a href="#" class="pagination__item pagination__item--active">1</a>
-							<a href="#" class="pagination__item">2</a>
-							<a href="#" class="pagination__item">3</a>
-							<a href="#" class="pagination__item pagination__item--next">
-								<svg class="svg-icon svg-icon--caret_right">
-									<use xlink:href="img/icons/svg-symbols.svg#caret_right"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-padding section-background section-background--spacing" style="background-image:url(img/home/form/bg.jpg);">
-			<div class="container">
 				<div class="form-doubled form-doubled--big">
-					<div class="form-description white-wrap">
-						<header>
-							<p class="shiny-title">Подзаголовок</p>
-							<h3 class="headline headline--medium">Небольшой SEO</h3>
-						</header>
-						<p>Смысл жизни, как следует из вышесказанного, 
-								транспонирует типичный гений. Заблуждение осмысленно 
-								подчеркивает язык образов. Вселенная создает катарсис, 
-								ломая рамки привычных представлений.</p>
-								
-							<p>Созерцание транспонирует знак. Абстракция раскладывает 
-								на элементы предмет деятельности, ломая рамки 
-								привычных представлений.</p>
-					</div>
-					<div class="contact-form contact-form--size-medium">
+					<div class="order-form">
 						<form action="#3" class="form">
 							<fieldset class="form__fieldset">
-								<legend class="form__header">Свяжитесь с нами</legend>
+								<legend class="form__header">Оформление заказа
+								</legend>
 								<div class="form__row form__row--double">
 									<div class="form__field form__field--half">
 										<label for="#form-1-name" class="form__field-label">Введите ваше имя</label>
@@ -755,33 +271,77 @@
 										<input id="form-1-phone" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="+7 (9__) ___-__-__">
 									</div>
 								</div>
-								<div class="form__row">
-										<div class="form__field">
-											<label for="#form-1-phone" class="form__field-label">загрузите фотографию желаемой модели</label>
-											<div class="ui-upload">
-												<div class="ui-upload__label">
-													<svg class="svg-icon svg-icon--plus">
-														<use xlink:href="img/icons/svg-symbols.svg#plus"></use>
-													</svg>
-													<span class="ui-upload__label-text">Не более 3 Мб (jpg, png,)</span></div>
-												<input class="ui-upload__input" type="file" class="upload" />
-											</div>
-										</div>
+								<div class="form__row form__row--double">
+									<div class="form__field form__field--half">
+										<label for="#form-1-name" class="form__field-label">Ваша электронная почта</label>
+										<input id="form-1-name" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="">
+									</div>
+									<div class="form__field form__field--half">
+										<label for="#form-1-phone" class="form__field-label">страна доставки</label>
+										<input id="form-1-phone" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="">
+									</div>
+								</div>
+								<div class="form__row form__row--double">
+									<div class="form__field form__field--half">
+										<label for="#form-1-name" class="form__field-label">Ваш адрес</label>
+										<input id="form-1-name" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="">
+									</div>
+									<div class="form__field form__field--half">
+										<label for="#form-1-phone" class="form__field-label">почтовый индекс</label>
+										<input id="form-1-phone" type="text" class="ui-input ui-input--normal ui-input--default" placeholder="">
+									</div>
 								</div>
 								<div class="form__row">
 									<div class="form__field">
-										<label for="#form-1-text" class="form__field-label">Ваше сообщение
+										<label for="#form-1-text" class="form__field-label form__field-label--bold form__field-label--red">Ваше сообщение
 											<a data-fancybox-trigger="size-chart" data-src="#size-chart-popup" href="javascript:;" class="form__field-label-link fancybox-size-chart">Размерная сетка</a>
 										</label>
-										<textarea id="form-1-text" type="text" class="ui-input ui-input--textarea ui-input--normal ui-input--default" placeholder=""></textarea>
+										<textarea id="form-1-text" type="text" class="ui-input ui-input--textarea ui-input--normal ui-input--bold-bottom ui-input--default" placeholder=""></textarea>
 									</div>
 								</div>
 								<div class="form__row form__row--disclamer">
-									<button class="button button--size-smallmd button--theme-default"  tabindex="0">Связаться</button>
+									<button class="button button--size-smallmd button--theme-default"  tabindex="0">оформить заказ</button>
 									<div class="form__disclamer">Нажимая кнопку, высоглашаетесь<br/>с условиями обработки данных</div>
 								</div>
 							</fieldset>
 						</form>
+					</div>
+
+					<div class="order-total">
+						<div class="order-total__header">Ваш заказ</div>
+
+						<div class="order-total__row order-total__row--line">
+							<div class="order-total__row-item">Стоимость</div>
+							<div class="order-total__row-item order-total__row-item--bold">6 000 P</div>
+						</div>
+
+						<div class="order-total__line">Доставка</div>
+						
+						<div class="order-total__row order-total__row--padding">
+							<div class="order-total__row-item"><label class="ui-radio"><input type="radio" name="radioo" id="delivery-1"> <div class="ui-radio__dot"></div></label> <label for="delivery-1">Почта России</label></div>
+							<div class="order-total__row-item order-total__row-item--bold">299 P</div>
+						</div>
+						<div class="order-total__row order-total__row--padding">
+							<div class="order-total__row-item"><label class="ui-radio"><input type="radio" name="radioo" id="delivery-2"> <div class="ui-radio__dot"></div></label> <label for="delivery-2">Почта России</label></div>
+							<div class="order-total__row-item order-total__row-item--bold">299 P</div>
+						</div>
+						<div class="order-total__row order-total__row--padding">
+							<div class="order-total__row-item"><label class="ui-radio"><input type="radio" name="radioo" id="delivery-3"> <div class="ui-radio__dot"></div></label> <label for="delivery-3">Почта России</label></div>
+							<div class="order-total__row-item order-total__row-item--bold">299 P</div>
+						</div>
+						<div class="order-total__row order-total__row--padding order-total__row--line">
+							<div class="order-total__row-item"><label class="ui-radio"><input type="radio" name="radioo" id="delivery-4"> <div class="ui-radio__dot"></div></label> <label for="delivery-4">Почта России</label></div>
+							<div class="order-total__row-item order-total__row-item--bold">0 P</div>
+						</div>
+						
+						<div class="order-total__row order-total__row--total">
+							<div class="order-total__row-item order-total__row-item--bold order-total__row-item--red">Итого</div>
+							<div class="order-total__row-item order-total__row-item--bold order-total__row-item--red">6 299 P</div>
+						</div>
+
+						<div class="order-total__desc">Конечная стоимость будет уточнена во время оформления заказа.</div>
+
+						<a href="#">Узнать о доставке и оплате</a>
 					</div>
 				</div>
 			</div>
