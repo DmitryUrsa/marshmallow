@@ -335,5 +335,7 @@ jQuery(function() {
 		j.preventDefault();
 	});
 
+	$('select.custom-select').customSelect();
+
 
 });

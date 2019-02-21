@@ -344,7 +344,6 @@ $burger-line-h: 3px;
 	background: $pink url('../img/home/hero-main/hero-bg.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
-	padding-bottom: 290px;
 
 	&__inner {
 		display: flex;
@@ -1329,6 +1328,8 @@ $burger-line-h: 3px;
 }
 
 .feature-circle {
+	$self: &;
+	
 	width: 260px;
 	height: 260px;
 	border-radius: 100%;
@@ -1337,8 +1338,9 @@ $burger-line-h: 3px;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 32px;
+	padding-left: 32px;
+	padding-top: 35px;
 	text-align: center;
 	overflow: hidden;
 	position: relative;
@@ -1376,7 +1378,43 @@ $burger-line-h: 3px;
 		line-height: 30px;
 		letter-spacing: 0.53px;
 	}
+
+	&--normal {
+		margin-bottom: 30px;
+		&::after {
+			display: none;
+		}
+
+		#{ $self }__content {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #f2f1e5;
+			padding: 30px 30px 50px 30px;
+			text-align: center;
+			font-size: 16px;
+			line-height: 25px;
+			opacity: 0;
+			transition: opacity 200ms ease;
+			
+			&:before {
+				content: '';
+				width: 50px;
+				height: 3px;
+				background-color: #f37e7e;
+				display: block;
+				margin: 0 auto 25px auto;
+			}
+		}
+	}
+
+	&:hover {
+		#{ $self }__content {
+			opacity: 1;
+		}
+	}
 }
+
 
 .features {
 	&--inset {
@@ -1810,6 +1848,14 @@ $burger-line-h: 3px;
 			display: flex;
 			align-items: flex-start;
 			align-items: center;
+
+			&-vertical {
+				flex-direction: column-reverse;
+
+				.button {
+					margin-top: 20px;
+				}
+			}
 		}
 		&--double {
 			display: flex;
@@ -3738,6 +3784,54 @@ $burger-line-h: 3px;
 	}
 }
 
+.about-us-girl-outer {
+	position: relative;
+	top: -260px;
+}
+
+.about-us-girl-inner {
+	&:before, &:after {
+		content:'';
+		width: 100px;
+		height: 3px;
+		background-color: #f37e7e;
+		display: inline-block;
+		position: absolute;
+		transform: rotate(-45deg);
+	}
+	&:before {
+		left: 85px;
+    bottom: 172px;
+	}
+	&:after {
+		right: -4px;
+    bottom: 322px;
+	}
+}
+
+.ghost-form {
+	padding: 30px;
+	input, textarea, option {
+		background-color: transparent;
+	}
+}
+
+.form-ghost {
+	text-align: center;
+	&__subhead {
+		color: #f05f5f;
+	}
+	&__header {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.section-form-ghost {
+	padding-top: 180px;
+	padding-bottom: 180px;
+	min-height: 810px;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack
 	.product-image {

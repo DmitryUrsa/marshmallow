@@ -44,6 +44,7 @@ gulp.task('scripts', function() {
 		'app/libs/svg4everybody/dist/svg4everybody.min.js',
 		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/libs/parallax-master/src/parallax.min.js',
+		'app/libs/customselect/js/jquery.custom-select.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
