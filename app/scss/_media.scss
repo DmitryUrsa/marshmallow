@@ -514,10 +514,13 @@
     }
   }
   .hero-carousel {
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
     order: 1;
+   
+  }
+  .hero-catalog-slider {
+    margin-left: 0;
+    margin-right: 0;
   }
   .ui-dots {
     justify-content: center;
@@ -751,8 +754,8 @@
     &--fixed,
     &--default {
       .megamenu-button {
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 0;
+        margin-left: 0;
       }
     }
   }
