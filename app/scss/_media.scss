@@ -226,7 +226,18 @@
   .about-girl {
     right: 0;
     width: 390px;
-    float: right;
+  }
+  .about-girl-desc {
+    right: 0;
+    top: 0;
+    &::before {
+      display: none;
+    }
+  }
+  .section-about {
+    .contact-form--size-small {
+      margin: 0 auto;
+    }
   }
   .feature-circle-outer {
     display: flex;

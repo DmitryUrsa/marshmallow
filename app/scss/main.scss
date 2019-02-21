@@ -3602,6 +3602,37 @@ $burger-line-h: 3px;
 	}
 }
 
+.contact-header {
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 0.6em;
+}
+
+.about-girl-desc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	right: -35px;
+	top: -20px;
+
+	&::before {
+		content: '';
+		width: 200px;
+		height: 3px;
+		background-color: #f05f5f;
+		position: absolute;
+		top: 12px;
+    left: -15px;
+    z-index: 2;
+	}
+
+	b {
+		color: #aea8a8;
+		font-style: italic;
+	}
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE 11 hack
 	.product-image {
 		img {
