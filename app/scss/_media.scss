@@ -111,6 +111,18 @@
 // ≥1200px
 @include media-breakpoint-down(lg) {
 
+  .accent-block {
+    flex-direction: column;
+    &__first {
+      margin-bottom: 20px;
+    }
+    &__second {
+      min-width: 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
   .order-total {
     margin-left: 0;
     padding: 40px;
@@ -544,6 +556,9 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .delivery-types__item {
+    margin-bottom: 20px;
+  }
   .table--responsive-md {
     margin-bottom: 0;
     background-color: transparent;
@@ -619,6 +634,9 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .delivery-types {
+    justify-content: center;
+  }
   .product-image {
     height: 450px;
   }
